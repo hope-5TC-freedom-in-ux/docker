@@ -1,0 +1,3 @@
+[submodule "app"]
+	path = app
+	url = https://github.com/hope-5TC-freedom-in-ux/backend.git

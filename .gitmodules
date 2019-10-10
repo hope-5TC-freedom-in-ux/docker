@@ -1,3 +1,15 @@
 [submodule "app"]
 	path = app
 	url = https://github.com/hope-5TC-freedom-in-ux/backend.git
+[submodule "games/challenge-article-ifff"]
+	path = games/challenge-article-ifff
+	url = https://github.com/hope-5TC-freedom-in-ux/challenge-article-ifff.git
+[submodule "static/leaderboard"]
+	path = static/leaderboard
+	url = https://github.com/hope-5TC-freedom-in-ux/leaderboard.git
+[submodule "games/leaderboard"]
+	path = games/leaderboard
+	url = https://github.com/hope-5TC-freedom-in-ux/leaderboard
+[submodule "games/site_start"]
+	path = games/site_start
+	url = https://github.com/hope-5TC-freedom-in-ux/site_start

@@ -1,23 +1,69 @@
-[start]
-content= """
-You have to click "start"
-<form action="/">
-    <input type="submit" value="start" />
-</form>
+[leaderboard]
+url = "/games/leaderboard"
+
+[privacy]
+  [[privacy.intervals]]
+  lower = 0
+  upper = 33
+  message = """
+  Houlà, attention à la protection de vos données ! Vous semblez enclin à les partager davantage que des chewing-gum dans une cours de récréation. C’est difficile à récupérer par la suite…
+  """
+  [[privacy.intervals]]
+  lower = 33
+  upper = 67
+  message = """
+  Vous êtes en bonne voie, mais vous pouvez mieux faire. Enfin, peut-être que vous n’avez pas spécialement de temps pour penser à tout.
+  """
+
+  [[privacy.intervals]]
+  lower = 67
+  upper = 100
+  message = """
+  Bravo ! Vous avez réussi à trouver comment limiter la quantité d’informations divulguées, ou de conditions à accepter.
+  """
+
+[time]
+  [[time.intervals]]
+  lower = 0
+  upper = 33
+  message = """
+  Visiblement, vous aimez prendre votre temps pour surfer sur le web en toute sérénité. Mais aurez-vous toujours autant de temps à votre disposition ?
+  """
+  [[time.intervals]]
+  lower = 33
+  upper = 67
+  message = """
+  Rapide, mais pas trop ! Vous prenez le temps d’analyser l’essentiel. Un bon compromis entre temps et liberté d’agir… enfin, c’est à vous de voir.
+  """
+
+  [[time.intervals]]
+  lower = 67
+  upper = 100
+  message = """
+  Vous n’avez pas de temps à perdre ! Prenez quand même le temps d’analyser quelques éléments de navigation, ne serait-ce que l’essentiel.
+  """
+
+
+
+[[games]]
+name="start"
+url = "/games/site_start"
+congrat = "Tada 🎵, premier piège et vous venez d'etre évalué ! Voici votre score initial"
+message = """
+Vous l’aurez compris, votre objectif sur cette application est de progresser sur un simulateur de site internet, en essayant de trouver le parfait compromis entre votre temps et votre intégrité. Vous allez donc réaliser quelques petits défis afin de mettre votre bon sens en pratique.
+
+Etes-vous prêt(e) ? C’est parti !
 """
 
+[[games]]
+name="ifff"
+url = "/games/challenge-article-ifff"
+
 [end]
+name="end"
 content="""
-You have to click "end"
-<form action="/start">
+<h1>You have to click "end"</h1>
+<form action="/">
     <input type="submit" value="end" />
 </form>
 """
-
-[[games]]
-name="demo"
-url="/games/demo_game"
-
-[[games]]
-name="demo2"
-url="/games/demo_game2"
